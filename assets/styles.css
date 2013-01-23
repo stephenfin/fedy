@@ -1,35 +1,41 @@
-
 * {
-	font-family:'Ubuntu', sans-serif;
+	font-family:'Open Sans', sans-serif;
 }
 
-.copyrights {
-	font-size:12px;
-}
-
-.brand img {
-	height:25px;
-	width:25px;
-	position:relative;
-	bottom:3px;
-	margin-right:1px;
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
 }
 
 .myshare {
 	padding-top:13px;
 }
 
-.forkme {
+.copyrights {
+	font-size:85%;
+}
+
+.brand img {
+	height:21px;
+	width:21px;
 	position:relative;
-	top:5px;
+	bottom:3px;
+	margin-right:3px;
+}
+
+.rightbutton {
+	position:relative;
+	top:3px;
 	margin-left:12px;	
 }
 
-.mygithub {
-	height:24px;
-	background: url(github1.png) top left no-repeat;
-	padding-left:20px;
-	font-style:normal;
+@media (max-width: 767px) {
+	.pull-right, .slider-wrapper {
+		display:none;
+	}
+	
+	body {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
 }
-
-
