@@ -31,40 +31,31 @@
 				}(document, 'script', 'facebook-jssdk'));
 		</script>
 
-		<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar navbar-inverse navbar-static-top">
 			<div class="navbar-inner">
 				<div class="container">
 					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
 					<a class="brand" href="http://satya164.github.com/fedorautils/"><img src="assets/fedorautils.png">Fedora Utils</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav">
-							<li><a href="https://github.com/satya164/fedorautils/">Code</a></li>
-							<li><a href="https://github.com/satya164/fedorautils/wiki">Wiki</a></li>
-							<li><a href="https://github.com/satya164/fedorautils/issues">Issues</a></li>
-							<li><a href="https://github.com/satya164/fedorautils/blob/master/CHANGELOG">Changelog</a></li>
-							<li><a href="man.html">User Manual</a></li>
+							<li>
+								<a href="https://github.com/satya164/fedorautils/">Code</a>
+							</li>
+							<li>
+								<a href="https://github.com/satya164/fedorautils/wiki">Wiki</a>
+							</li>
+							<li>
+								<a href="https://github.com/satya164/fedorautils/issues">Issues</a>
+							</li>
+							<li>
+								<a href="https://github.com/satya164/fedorautils/blob/master/CHANGELOG">Changelog</a>
+							</li>
+							<li>
+								<a href="man.html">User Manual</a>
+							</li>
 						</ul>
 						<div class="pull-right">
-							<ul class="nav myshare">
-								<li><g:plusone size="medium" data-href="http://satya164.github.com/fedorautils/" ></g:plusone></li>
-								<li>
-									<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://satya164.github.com/fedorautils/" data-text="Tweak your Fedora" data-via="satya164" data-hashtags="fedorautils">Tweet</a>
-									<script>
-										! function(d, s, id) {
-											var js, fjs = d.getElementsByTagName(s)[0];
-											if (!d.getElementById(id)) {
-												js = d.createElement(s);
-												js.id = id;
-												js.src = "//platform.twitter.com/widgets.js";
-												fjs.parentNode.insertBefore(js, fjs);
-											}
-										}(document, "script", "twitter-wjs");
-									</script>
-								</li>
-								<li>
-									<div class="fb-like" data-href="http://satya164.github.com/fedorautils/" data-layout="button_count" data-send="false" data-width="300" data-colorscheme="light" data-show-faces="false"></div>
-								</li>
-							</ul>
+
 							<a class="btn btn-success btn-small rightbutton" href="http://satya164.github.com#install"><i class="icon-download"></i>Install in Fedora 18</a
 						</div>
 					</div>
@@ -73,6 +64,31 @@
 		</div>
 
 		<div class="container">
+			<div id="socials">
+				<ul>
+					<li>
+						<g:plusone size="medium" data-href="http://satya164.github.com/fedorautils/" ></g:plusone>
+					</li>
+					<li>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://satya164.github.com/fedorautils/" data-text="Tweak your Fedora" data-via="satya164" data-hashtags="fedorautils">Tweet</a>
+						<script>
+							! function(d, s, id) {
+								var js, fjs = d.getElementsByTagName(s)[0];
+								if (!d.getElementById(id)) {
+									js = d.createElement(s);
+									js.id = id;
+									js.src = "//platform.twitter.com/widgets.js";
+									fjs.parentNode.insertBefore(js, fjs);
+								}
+							}(document, "script", "twitter-wjs");
+						</script>
+					</li>
+					<li>
+						<div class="fb-like" data-href="http://satya164.github.com/fedorautils/" data-layout="button_count" data-send="false" data-width="300" data-colorscheme="light" data-show-faces="false"></div>
+					</li>
+				</ul>
+			</div>
+
 			<div class="slider-wrapper theme-default">
 				<div id="slider" class="nivoSlider">
 					<img src="images/fu-main.png" data-thumb="images/fu-main.png" title="#htmlcaption1" alt="" />
@@ -81,47 +97,80 @@
 					<img src="images/fu-repos.png" data-thumb="images/fu-repos.png" title="#htmlcaption4" alt="" />
 					<img src="images/fu-plugins.png" data-thumb="images/fu-plugins.png" title="#htmlcaption5" alt="" />
 				</div>
-				<div id="htmlcaption1" class="nivo-html-caption">Start screen using zenity</div>
-				<div id="htmlcaption2" class="nivo-html-caption">Tweak your system, install codecs and additional software that Fedora <a href="https://fedoraproject.org/wiki/Forbidden_items?rd=ForbiddenItems" >doesn't want to ship</a></div>
-				<div id="htmlcaption3" class="nivo-html-caption">Install many popular software just with one click!</div>
-				<div id="htmlcaption4" class="nivo-html-caption">Easily manage your repositories and even add several third party repositories from <a href="http://repos.fedorapeople.org/">repos.fedorapeople.org</a></div>
-				<div id="htmlcaption5" class="nivo-html-caption">Fedora Utils is extensible with plugins. You can <a href="https://github.com/satya164/fedorautils/wiki/Plugins-support">write your own plugin</a></div>
+				<div id="htmlcaption1" class="nivo-html-caption">
+					Start screen using zenity
+				</div>
+				<div id="htmlcaption2" class="nivo-html-caption">
+					Tweak your system, install codecs and additional software that Fedora <a href="https://fedoraproject.org/wiki/Forbidden_items?rd=ForbiddenItems" >doesn't want to ship</a>
+				</div>
+				<div id="htmlcaption3" class="nivo-html-caption">
+					Install many popular software just with one click!
+				</div>
+				<div id="htmlcaption4" class="nivo-html-caption">
+					Easily manage your repositories and even add several third party repositories from <a href="http://repos.fedorapeople.org/">repos.fedorapeople.org</a>
+				</div>
+				<div id="htmlcaption5" class="nivo-html-caption">
+					Fedora Utils is extensible with plugins. You can <a href="https://github.com/satya164/fedorautils/wiki/Plugins-support">write your own plugin</a>
+				</div>
 			</div>
 
 			<h3>What is Fedora Utils?</h3>
 
-			<p>Fedora Utils lets you install codecs and additional software that Fedora <a href="https://fedoraproject.org/wiki/Forbidden_items?rd=ForbiddenItems" >doesn't want to ship</a>, like MP3 codecs, Adobe Flash, Oracle Java etc. It can also fix problems, tweak and cleanup your system, show system information and much more with just few clicks.</p>
+			<p>
+				Fedora Utils lets you install codecs and additional software that Fedora <a href="https://fedoraproject.org/wiki/Forbidden_items?rd=ForbiddenItems" >doesn't want to ship</a>, like MP3 codecs, Adobe Flash, Oracle Java etc. It can also fix problems, tweak and cleanup your system, show system information and much more with just few clicks.
+			</p>
 
 			<a name="install"></a>
 
 			<h3>Installation</h3>
 
-			<p>Installing Fedora Utils is as easy as running a single command. To install the latest version of Fedora Utils in your system, open the terminal and run the folllowing command, enter your root password when prompted.</p>
-
+			<p>
+				Installing Fedora Utils is as easy as running a single command. To install the latest version of Fedora Utils in your system, open the terminal and run the folllowing command, enter your root password when prompted.
+			</p>
 			<pre>su -c "curl http://download.opensuse.org/repositories/home:/satya164:/fedorautils/Fedora_17/home:satya164:fedorautils.repo -o /etc/yum.repos.d/fedorautils.repo && yum install fedorautils"</pre>
+			
 
-			<p>The above command will set up the Fedora Utils repository and will install Fedora Utils in your system. Adding the repo to your system ensures that Fedora Utils is always up-to-date and all the new features and bug fixes are delivered to you automatically.</p>
 
-			<div class="alert alert-info"><i class="icon-info-sign"></i>Though the address above specifies Fedora 17, fedorautils isn't limited to Fedora 17 and is fully compatible with Fedora 18.</div>
+			<p>
+				The above command will set up the Fedora Utils repository and will install Fedora Utils in your system. Adding the repo to your system ensures that Fedora Utils is always up-to-date and all the new features and bug fixes are delivered to you automatically.
+			</p>
+
+			<div class="alert alert-info">
+				<i class="icon-info-sign"></i>Though the address above specifies Fedora 17, fedorautils isn't limited to Fedora 17 and is fully compatible with Fedora 18.
+			</div>
 
 			<h3>Tips &amp; tricks</h3>
 
-			<p>What's the best thing about Fedora Utils? If you think it's the GUI, then think again! You can use Fedora Utils in bash scripts to help you install software and tweak the sytsem automatically. See <code>fedorautils --exec list</code> for a list of commands you can use in bash scripts.</p>
+			<p>
+				What's the best thing about Fedora Utils? If you think it's the GUI, then think again! You can use Fedora Utils in bash scripts to help you install software and tweak the sytsem automatically. See <code>
+					fedorautils --exec list</code>
+				for a list of commands you can use in bash scripts.
+			</p>
 
-			<p>Fedora Utils saves the downloaded files. Have to do the same steps on more than one system? You won't need to redownload the files again. Fedora Utils can use previously downloaded files with ease. Combine this with the scripting ability, and configuring multiple systems becomes a lot easier.</p>
+			<p>
+				Fedora Utils saves the downloaded files. Have to do the same steps on more than one system? You won't need to redownload the files again. Fedora Utils can use previously downloaded files with ease. Combine this with the scripting ability, and configuring multiple systems becomes a lot easier.
+			</p>
 
-			<p>You can also extend the functionality of Fedora Utils by plugins. Writing a plugin is easy and fun. Refer <a href="https://github.com/satya164/fedorautils/wiki/Plugins-support">this page</a> to have an idea.</p>
+			<p>
+				You can also extend the functionality of Fedora Utils by plugins. Writing a plugin is easy and fun. Refer <a href="https://github.com/satya164/fedorautils/wiki/Plugins-support">this page</a> to have an idea.
+			</p>
 
 			<h3>More info</h3>
 
-			<p>Fedora Utils is released under GNU GPL V3.0 and the source code is publicly available on <a href="https://github.com/satya164/fedorautils/">GitHub</a>. Feel free to make modifications and contributions.</p>
+			<p>
+				Fedora Utils is released under GNU GPL V3.0 and the source code is publicly available on <a href="https://github.com/satya164/fedorautils/">GitHub</a>. Feel free to make modifications and contributions.
+			</p>
 
-			<p>If you like Fedora Utils, please support us by spreading the word. You can catch me on <a href="http://plus.google.com/114564489020097923600">Google+</a> or <a href="http://www.facebook.com/satya164">Facebook</a>. Also check my <a href ="http://funsurf-blog.blogspot.com/">blog</a> and <a href="http://satya164.deviantart.com/">deviantArt</a> page :)</p>
+			<p>
+				If you like Fedora Utils, please support us by spreading the word. You can catch me on <a href="http://plus.google.com/114564489020097923600">Google+</a> or <a href="http://www.facebook.com/satya164">Facebook</a>. Also check my <a href ="http://funsurf-blog.blogspot.com/">blog</a> and <a href="http://satya164.deviantart.com/">deviantArt</a> page :)
+			</p>
 
 			<hr>
 
 			<footer>
-				<p class="copyrights">Fedora Utils © 2012 Satyajit Sahoo. <a href="http://fedoraproject.org/" target="_blank">Fedora™ </a>is a trademark of <a href="http://redhat.com/" target="_blank">Red Hat</a>. All rights reserved.</p>
+				<p class="copyrights">
+					Fedora Utils © 2012 Satyajit Sahoo. <a href="http://fedoraproject.org/" target="_blank">Fedora™ </a>is a trademark of <a href="http://redhat.com/" target="_blank">Red Hat</a>. All rights reserved.
+				</p>
 			</footer>
 
 		</div>
