@@ -1,10 +1,7 @@
-* {
-	font-family:'Open Sans', sans-serif;
-}
-
 body {
 	padding-top: 0px;
-	padding-bottom: 40px;	
+	padding-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #socials {
@@ -12,6 +9,7 @@ body {
 	
 	
 }
+
 #socials ul {
 	margin: 0 auto;
 	width:400px;
@@ -45,12 +43,12 @@ body {
 
 .slider-wrapper {
 	margin-top:20px;
-	max-width:960px;
+	max-width:100%;
 	margin-left:auto;
 	margin-right:auto;	
 		
 }
-.container {
-	
+
+.container {	
 }
 
