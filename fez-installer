@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script to install Fez <http://satya164.github.io/fez/>.
-# Copyright (C) 2012  Satyajit sahoo
+# Copyright (C) 2014  Satyajit sahoo
 
 if [[ ! $(whoami) = "root" ]]; then
     echo "Please run the script as root."
@@ -21,11 +21,6 @@ metadata_expire=1d
 skip_if_unavailable=1
 EOF
 
-# Install dependencies
-echo "Installing dependencies..."
-yum -y install --nogpgcheck --skip-broken coreutils curl sed tar unzip wget yad
-
-
 # Test if the repo is available for current Fedora version and install the package
 echo "Installing fez..."
 fver="$(rpm -E %fedora)"
@@ -33,6 +28,7 @@ curl -s -f -L "http://download.opensuse.org/repositories/home:/satya164:/fez/Fed
 if [[ $? -eq 0 ]]; then
     yum -y install --nogpgcheck --skip-broken fez
 else
+    yum -y install --nogpgcheck --skip-broken coreutils curl sed tar unzip wget yad
     yum -y install --nogpgcheck --skip-broken --releasever="$((fver-1))" fez
 fi
 
