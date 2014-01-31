@@ -1,6 +1,5 @@
-<svg width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs/>
-<path style="fill:#0087f6;fill-rule:evenodd" d="m -22.169491,-21.016949 a 16.881355,21.559322 0 1 1 -33.76271,0 16.881355,21.559322 0 1 1 33.76271,0 z" transform="matrix(.4739 0 0 .37107 26.50602 15.79874)"/>
-<rect width="9.999" x="4.001" y="5.001" rx="2.163" height="6.001" style="fill-opacity:.3"/>
-<path style="fill:#fff" d="m 5.4990184,11.500043 a 3.4999456,3.5000431 0 0 1 0,-7.000086 3.4999456,3.5000431 0 1 1 0,7.000086 z"/>
+<svg width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16">
+<rect width="16" x="0" y="0" rx="2.205" height="16" style="fill:#eee;fill-rule:evenodd"/>
+<rect width="12" x="-14" y="5" rx="2.596" height="6" style="fill:#0087f6" transform="scale(-1 1)"/>
+<path style="fill:#fff" d="m 11.000632,12 a 4,4 0 0 0 0,-7.9999999 4,4 0 1 0 0,7.9999999 z"/>
 </svg>
