@@ -121,8 +121,9 @@ footer a:focus, footer a:hover {
 }
 
 #home {
+    display: table;
     height: 100%;
-    background-color: #32aad8;
+    background-color: #0087f6;
     background-image: url(../img/bg.png);
     background-attachment: scroll;
     background-position: center center;
@@ -147,11 +148,11 @@ footer a:focus, footer a:hover {
 }
 
 #home .content {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  transform: translateY(-50%);
+    position: relative;
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
 }
 
 #home .code {
@@ -222,14 +223,7 @@ footer a:focus, footer a:hover {
 
 @media screen and (max-width: 640px) {
     body { font-size: 85%; }
-    nav { font-size: 100%; }
-    nav ul { padding: 0 5px; }
-    nav a { padding: 10px; }
-    section { padding: 0 5px; }
+    section { padding: 0 10px; }
     footer { padding: 10px 5px; }
-    .social { display: none; }
-    .content { padding: 10px; }
-    .thumb { margin: 0 10px 10px 0; }
-    .palette div { display: block; }
-    .profile img { float: none; }
+    .content { padding: 10px 0; }
 }
