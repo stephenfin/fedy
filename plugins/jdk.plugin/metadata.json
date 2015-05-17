@@ -1,7 +1,7 @@
 {
 	"icon": "java",
-	"label": "Oracle JRE",
-	"description": "Allows to run applications written in the Java programming language.",
+	"label": "Oracle JDK",
+	"description": "Development environment for building applications using the Java programming language.",
 	"category": "Apps",
 	"scripts": {
 		"exec": {
