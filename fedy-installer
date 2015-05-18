@@ -10,20 +10,7 @@ fi
 
 
 echo "Adding repositories..."
-
-if [[ ! -f /etc/yum.repos.d/ozonos.repo ]]; then
-cat <<EOF | tee /etc/yum.repos.d/ozonos.repo > /dev/null 2>&1
-[ozonos]
-name=Repository for Ozon OS
-baseurl=http://goodies.ozon-os.com/repo/\$releasever/
-enabled=1
-skip_if_unavailable=1
-metadata_expire=1d
-gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-ozonos
-EOF
-fi
-
+rpm --quiet --query ozon-repos || dnf -y --nogpgcheck install http://goodies.ozon-os.com/repo/21/noarch/ozon-repos-21-5.fc21.noarch.rpm
 rpm --quiet --query rpmfusion-free-release || dnf -y --nogpgcheck install http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 rpm --quiet --query rpmfusion-nonfree-release || dnf -y --nogpgcheck install http://download1.rpmfusion.org/free/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
