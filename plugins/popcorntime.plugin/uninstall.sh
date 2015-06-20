@@ -1,6 +1,6 @@
 #!/bin/bash
 
-xdg-icon-resource uninstall --novendor --size 256 "popcorn-time"
+xdg-icon-resource uninstall --novendor --size 256 "popcorntime"
 
 gtk-update-icon-cache -f -t /usr/share/icons/hicolor
 
