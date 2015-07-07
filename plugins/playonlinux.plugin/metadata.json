@@ -1,0 +1,17 @@
+{
+	"icon": "playonlinux",
+	"label": "PlayOnLinux",
+	"description": "An application to easily install and use numerous games and apps designed to run with Windows.",
+	"category": "Apps",
+	"scripts": {
+		"exec": {
+			"label": "Install",
+			"command": "run-as-root -s install.sh"
+		},
+		"undo": {
+			"label": "Remove",
+			"command": "run-as-root -s uninstall.sh"
+		},
+		"status": { "command": "rpm --quiet --query playonlinux" }
+	}
+}
