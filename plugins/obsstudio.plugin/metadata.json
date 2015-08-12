@@ -12,6 +12,7 @@
 			"label": "Remove",
 			"command": "run-as-root -s uninstall.sh"
 		},
-		"status": { "command": "rpm --quiet --query obs-studio" }
+		"status": { "command": "rpm --quiet --query obs-studio" },
+		"show": { "command": "test $(uname -m) = x86_64"}
 	}
 }
