@@ -2,6 +2,7 @@
 	"icon": "playonlinux",
 	"label": "PlayOnLinux",
 	"description": "An application to easily install and use numerous games and apps designed to run with Windows.",
+	"license": ["GPL", "LGPL"],
 	"category": "Apps",
 	"scripts": {
 		"exec": {

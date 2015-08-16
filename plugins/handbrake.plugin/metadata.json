@@ -2,6 +2,7 @@
 	"icon": "hb-icon",
 	"label": "HandBrake",
 	"description": "The open source video transcoder.",
+	"license": ["GPLv2", "Third party licenses"],
 	"category": "Apps",
 	"scripts": {
 		"exec": {

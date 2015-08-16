@@ -2,6 +2,7 @@
 	"icon": "spotify-client",
 	"label": "Spotify",
 	"description": "A commercial music streaming, podcast and video service.",
+	"license": "Proprietary",
 	"category": "Apps",
 	"scripts": {
 		"exec": {
