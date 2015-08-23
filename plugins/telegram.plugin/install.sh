@@ -2,4 +2,4 @@
 
 dnf copr -y enable rommon/telegram
 
-dnf -y install telegram-desktop libappindicator
+dnf -y install telegram-desktop
